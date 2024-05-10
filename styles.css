@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.kanban-heading {
+    font-family: 'Roboto', sans-serif; /* Apply the desired font */
+    font-size: 36px;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 200px;
+    width: calc(50% - 20px);
+    height: 300px;
+}
+
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100px; /* Increase the height of the task cards */
+    overflow: hidden;
+}
+
+.task-card:hover {
+    cursor: grab;
+}
+
+.todo {
+    background-color: #ffe4b5;
+    position: relative;
+}
+
+.task-input {
+    margin-bottom: 10px;
+}
+
+.task-input input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.task-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #45a049;
+}
+
+.done {
+    background-color: #90ee90;
+    display: flex;
+    flex-direction: column;
+}
+
+#done-tasks-container {
+    overflow-y: auto;
+    max-height: calc(100vh - 240px);
+    padding: 10px;
+}
+
+.done-task {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#completed-tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#completed-tasks-table th, #completed-tasks-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#completed-tasks-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
